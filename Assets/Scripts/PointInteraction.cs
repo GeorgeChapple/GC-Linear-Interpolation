@@ -1,14 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PointInteraction : MonoBehaviour
 {
     [SerializeField] private InputActionReference playerInputs;
-    float pointerInputValue;
-    bool shoot;
+    private float pointerInputValue;
+    private bool shoot;
     private Camera cam;
     private Vector3 lerpCoords;
 

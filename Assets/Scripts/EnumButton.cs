@@ -1,15 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class EnumButton : MonoBehaviour
 {
     [SerializeField] private GameObject dropDown;
     [SerializeField] private GameObject lerpObject;
 
-    //When arrows on panel are pressed, change ease of the WallerCube
+    //When arrows on panel are pressed, change ease of the Lerp object
     public void ChangeButtonValue(int input) {
         dropDown.GetComponent<TMP_Dropdown>().value += input;
         if (dropDown.GetComponent<TMP_Dropdown>().value == 0) {

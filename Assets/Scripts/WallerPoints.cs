@@ -1,11 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class WallerPoints : MonoBehaviour {
-    [SerializeField] GameObject text;
-    [SerializeField] float turnSpeed = 0.0f;
+    [SerializeField] private GameObject text;
+    [SerializeField] private float turnSpeed = 0.0f;
     [SerializeField] public int y;
 
     //Starts rotation

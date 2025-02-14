@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class WallerCube : MonoBehaviour
 {
-    [SerializeField] GameObject startPoint;
-    [SerializeField] GameObject midPoint;
-    [SerializeField] GameObject endPoint;
-    [SerializeField] GameObject text;
+    [SerializeField] private GameObject startPoint;
+    [SerializeField] private GameObject midPoint;
+    [SerializeField] private GameObject endPoint;
+    [SerializeField] private GameObject text;
 
     //Moves the starting marker to its current position
     //Sets the start point, mid point and end point for a lerp
@@ -33,7 +31,7 @@ public class WallerCube : MonoBehaviour
     {
         transform.position = GetComponent<LerpScript>().lerpVector; //Update current position based on lerp
         if (Input.GetKeyDown(KeyCode.E)) {
-            GetComponent<WallerCube>().StartLerpBezier(); //If e key pressed, start lerp
+            StartLerpBezier(); //If e key pressed, start lerp
         }
     }
 }

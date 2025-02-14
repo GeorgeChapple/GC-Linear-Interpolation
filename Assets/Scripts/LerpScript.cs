@@ -1,10 +1,5 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
-using static LerpScript;
 
 public class LerpScript : MonoBehaviour
 {
@@ -55,6 +50,7 @@ public class LerpScript : MonoBehaviour
     }
 
     //Performs the desired ease calculation
+    //2025 Jimbo will update this to not be a horrible else if statement and instead use delegates soon
     public float GetEase(eases ease, float time) {
         float perc = 0;
         if (ease == eases.easeLinear) {
