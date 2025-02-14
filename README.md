@@ -1,4 +1,4 @@
-GEORGE CHAPPLE LINEAR INTERPOLATION
+GEORGE CHAPPLE LINEAR INTERPOLATION PROJECT
 ----------------------------
 Linear interpolation test in Unity Engine, using C#.
 
